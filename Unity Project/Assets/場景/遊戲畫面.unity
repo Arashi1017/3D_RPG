@@ -410,7 +410,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100078, guid: 461413943bab6ef40aa2a33f18380180, type: 3}
       propertyPath: m_Name
-      value: free_male_1
+      value: Jack
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 461413943bab6ef40aa2a33f18380180, type: 3}
       propertyPath: m_LocalPosition.x
@@ -640,7 +640,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18702678a443d8144b8433f4e2e61ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  run: 
+  parRun: "\u8DD1\u6B65\u958B\u95DC"
+  parJump: "\u8DF3\u8E8D\u958B\u95DC"
+  parAttack: "\u653B\u64CA\u89F8\u767C"
+  parHit: "\u53D7\u50B7\u89F8\u767C"
+  parDead: "\u6B7B\u4EA1\u958B\u95DC"
+  countNeed: 0
+  countCurrent: 0
+  isDead: 0
+  HP: 0
 --- !u!95 &258474380
 Animator:
   serializedVersion: 3
