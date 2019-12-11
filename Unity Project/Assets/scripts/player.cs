@@ -27,9 +27,10 @@ public class player : MonoBehaviour
     /// 跑步方法
     /// </summary>
     /// <param name="direction">方向</param>
-    private void Run(string direction)
+    private void Run()
     {
-        print("跑步" + direction);
+        print("水平 " +Input.GetAxis("Horizontal")); //A、D、左、右
+        print("垂直 " +Input.GetAxis("Vertical")); //W、S、上、下
     }
 
     /// <summary>
@@ -37,7 +38,10 @@ public class player : MonoBehaviour
     /// </summary>
     private void Jump()
     {
-        print("跳躍");
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            print("跳躍動畫");
+        }
     }
 
     /// <summary>
@@ -45,7 +49,10 @@ public class player : MonoBehaviour
     /// </summary>
     private void Attack()
     {
-
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            print("攻擊動畫");
+        }
     }
 
     /// <summary>
@@ -84,4 +91,10 @@ public class player : MonoBehaviour
     #endregion
 
 
+    private void Update()
+    {
+        Run();
+        Jump();
+        Attack();
+    }
 }
