@@ -73,15 +73,19 @@
     <Compile Include="Assets\Invector-3rdPersonController\Basic Locomotion LITE\Scripts\Generic\vExtensions.cs" />
     <Compile Include="Assets\Invector-3rdPersonController\Basic Locomotion LITE\Scripts\Generic\vPickupItem.cs" />
     <Compile Include="Assets\scripts\Car.cs" />
+    <Compile Include="Assets\scripts\DialogSystem.cs" />
     <Compile Include="Assets\scripts\LearnAPI.cs" />
     <Compile Include="Assets\scripts\LearnAPIstatic.cs" />
     <Compile Include="Assets\scripts\LearnIf.cs" />
     <Compile Include="Assets\scripts\LearnOperator.cs" />
+    <Compile Include="Assets\scripts\NPC.cs" />
     <Compile Include="Assets\scripts\player.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\Demo.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
     <None Include="Assets\Invector-3rdPersonController\Basic Locomotion LITE\README_Basic.txt" />
+    <None Include="Assets\Meshtint Free Santa Claus\www.meshtint.com.txt" />
+    <None Include="Assets\Meshtint Free Santa Claus\Read me.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/ASIA/3thgrade/Unity/3D_RPG/Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

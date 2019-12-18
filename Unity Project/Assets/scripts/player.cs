@@ -18,6 +18,8 @@ public class player : MonoBehaviour
     public bool isDead;
     [Range(0,100)]
     public float HP;
+
+    public Animator ani;
     #endregion
 
 
@@ -29,8 +31,13 @@ public class player : MonoBehaviour
     /// <param name="direction">方向</param>
     private void Run()
     {
-        print("水平 " +Input.GetAxis("Horizontal")); //A、D、左、右
-        print("垂直 " +Input.GetAxis("Vertical")); //W、S、上、下
+       // print("水平 " +Input.GetAxis("Horizontal")); //A、D、左、右
+       // print("垂直 " +Input.GetAxis("Vertical")); //W、S、上、下
+
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+
+        ani.SetBool("跑步開關", h != 0 || v != 0);
     }
 
     /// <summary>
@@ -38,10 +45,16 @@ public class player : MonoBehaviour
     /// </summary>
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            print("跳躍動畫");
-        }
+        ani.SetBool("跳躍開關", Input.GetKeyDown(KeyCode.Space));
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+           // print("跳躍動畫");
+           // ani.SetBool("跳躍開關", true);
+       // }
+       // else if (Input.GetKeyUp(KeyCode.Space))
+        //{
+            //ani.SetBool("跳躍開關", false);
+       // }
     }
 
     /// <summary>
@@ -49,9 +62,10 @@ public class player : MonoBehaviour
     /// </summary>
     private void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
+       if (Input.GetKeyDown(KeyCode.Mouse0))
+       {
             print("攻擊動畫");
+            ani.SetTrigger("攻擊觸發");
         }
     }
 
