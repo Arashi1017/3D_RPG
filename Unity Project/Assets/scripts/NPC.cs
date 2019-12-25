@@ -3,7 +3,7 @@
 public class NPC : MonoBehaviour
 {
     private string _name = "聖誕老人";
-    private string content = "可以幫我找找磁磚嗎";
+    private string content = "可以幫我找到10個陶壺嗎";
 
     [Header("對話系統")]
     public DialogSystem Ds;
